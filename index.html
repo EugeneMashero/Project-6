@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for choosing our platform, this form will help us get to know you better.</p>
+  <form action='#' id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your name" required></label>
+      <label for="email" id="email-label">Email <input id="email" type="email" name="email" placeholder="Enter your email" required></label>
+      <label for="number" id="number-label">Age <input id="number" type="number" name="number" placeholder="Enter your age" min="18" max="120" required></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">How did you hear about us?
+        <select id="dropdown" class="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Video on YouTube</option>
+          <option value="2">Facebook advertising</option>
+      </label>
+      </select>
+        <p>Choose your account type:</p>
+        <label for="radio-button"><input id="radio-button" name="account-type"  type="radio" value="personal-account"/>Personal account</label>
+        <label for="radio-button"><input id="radio-button" name="account-type"  type="radio" value="business-account"/>Business account</label>
+    </fieldset>
+    <fieldset>
+      <p>Choose in which sphere would you like to become better?
+      <label for="education-spheres-1">
+        <input id="education-spheres-1" type="checkbox" value="Math" name="education-spheres"/>Math
+      </label>
+      <label for="education-spheres-2">
+        <input id="education-spheres-2" type="checkbox" value="Nature-science" name="education-spheres"/>Nature science
+      </label>
+      <label for="education-spheres-3">
+        <input id="education-spheres-3" type="checkbox" value="Literature" name="education-spheres"/>Literature
+      </label>
+      <label for="education-spheres-4">
+        <input id="education-spheres-4" type="checkbox" value="Pysical-education" name="education-spheres"/>Pysical education
+      </label>
+      <label for="education-spheres-5">
+        <input id="education-spheres-5" type="checkbox" value="Foreign-languages" name="education-spheres"/>Foreign languages
+      </label>
+      <label for="Additional-comments">Additional information about you:
+        <textarea id="Additional-comments" name="Additional-comments" rows="3" cols="30" placeholder="I like to play board games..."></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
